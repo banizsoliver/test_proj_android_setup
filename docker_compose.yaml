@@ -1,0 +1,8 @@
+version: "3.2"
+
+services:
+  test_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ${DOCKER_REGISTRY-}testapp
